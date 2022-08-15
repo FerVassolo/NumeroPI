@@ -34,5 +34,5 @@ def conDecimal(a, b, t, p, n):
 
 D = decimal.Decimal
 conDecimal(1, 1/D(2).sqrt(), 1/D(4), 1, 5)
-print(3,141592653589793238462643383279502884197169399375105)
+
 
