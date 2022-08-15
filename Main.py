@@ -7,13 +7,11 @@ import decimal
 gausslegendreValue = GaussLegendre.solve(1, 1/math.sqrt(2), 1/4, 1, 4)
 D = decimal.Decimal
 gausslegendreDecimals = GaussLegendre.conDecimal(1, 1/D(2).sqrt(), 1/D(4), 1, 5)
-spigotValue = spigotAlgorithm.SpigotAlgorithm.calculate(40)
+spigotValue = spigotAlgorithm.SpigotAlgorithm.calculate(45)
 
-def comparisson():
-    print("Distintos valores de pi:")
-    print(f"\tMath Library: \n\t\t{mathLibraryPi.getPi()}\n\tSpigot: \n\t\t{spigotValue}\n\tGauss-Legendre: \n\t\t{gausslegendreValue}\n\tGauss-Legendre con decimals: \n\t\t{gausslegendreDecimals}")
+print("Distintos valores de pi:")
+print(f"\tMath Library: \n\t\t{mathLibraryPi.getPi()}\n\tSpigot: \n\t\t{spigotValue}\n\tGauss-Legendre: \n\t\t{gausslegendreValue}\n\tGauss-Legendre con decimals: \n\t\t{gausslegendreDecimals}")
 
-comparisson()
 
 circle1 = Circle(4)
 print("---------------------------")
