@@ -9,9 +9,11 @@ def solve(a, b, t, p, n): # newA, newB quiere decir An+1, Bn+1. La variable x ya
         t = t - p*math.pow(a-x, 2)
         pi = math.pow(newA+newB, 2)/(4*t)
         p = 2*p
-        print(pi)
         n -= 1
-        return solve(newA, newB, t, p, n)
+        if n != 0:
+            return solve(newA, newB, t, p, n)
+        else:
+            return pi
 solve(1, 1/math.sqrt(2), 1/4, 1, 4)
 
 
@@ -28,9 +30,11 @@ def conDecimal(a, b, t, p, n):
         t = t - p*(a-x)*(a-x)
         pi = ((newA+newB)*(newA+newB))/(4*t)
         p = 2*p
-        print(pi)
         n -= 1
-        return conDecimal(newA, newB, t, p, n)
+        if n != 0:
+            return conDecimal(newA, newB, t, p, n)
+        else:
+            return pi
 
 D = decimal.Decimal
 conDecimal(1, 1/D(2).sqrt(), 1/D(4), 1, 5)
