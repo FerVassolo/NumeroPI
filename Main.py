@@ -8,7 +8,7 @@ spigotValue = spigotAlgorithm.SpigotAlgorithm.calculate(6)
 
 def comparisson():
     print("Distintos valores de pi:")
-    print(f"Math Library: \n\t{mathLibraryPi.getPi()}\nSpigot: \n\t{spigotValue}\nGauss-Legendre: \n\t{gausslegendreValue}")
+    print(f"\tMath Library: \n\t\t{mathLibraryPi.getPi()}\n\tSpigot: \n\t\t{spigotValue}\n\tGauss-Legendre: \n\t\t{gausslegendreValue}")
 
 comparisson()
 
